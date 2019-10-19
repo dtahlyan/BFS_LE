@@ -1,8 +1,8 @@
 #Author: Divyakant Tahlyan
 #University of South Florida
 # BFS-LE route choice set generation
-#!/apps/python/2.7.5/bin/python
 # This code works with python 3
+# Updated October 2019
 import networkx as nx
 import pandas as pd
 import csv
@@ -65,7 +65,7 @@ rr = random.random()
 
 #--------------------------Define stopping conditions------------------------#
 Max_time = 3600 #Maximum time for route generation in seconds. 3600 seconds = 1 hour
-Max_unique = 5 #Maximum number of unique routes to generate
+Max_unique = 15 #Maximum number of unique routes to generate
 #---------------------------------------------------------------------------#
 
 # loop over origin destination pairs
