@@ -1,8 +1,6 @@
 #Author: Divyakant Tahlyan
-#University of South Florida
 # BFS-LE route choice set generation
-# This code works with python 3
-# Updated October 2019
+#Python 3.7
 import networkx as nx
 import pandas as pd
 import csv
@@ -10,25 +8,15 @@ import timeit
 #import sys
 import math
 import random
-
-#---------------------------------------------------------------------------#
-
 #---------------------------------------------------------------------------#
 #read list of LINK_IDs and corresponding lengths (meters)
 Link_Length = pd.read_csv('Link_Length_new.csv',low_memory=False, dtype={'LINK_ID':int, 'Shape_Length':float})
-
-
 #---------------------------------------------------------------------------#
 # read graph from txt
 G = nx.read_edgelist('network_graph_mehek.txt',create_using = nx.DiGraph(),delimiter = "," ,nodetype=int, data=(('LINK_ID',float),('TT',float),('Length',float)))
-
-
-
 #---------------------------------------------------------------------------#
 # used for writing line variable names
 namespace = globals()
-
-
 #---------------------------------------------------------------------------#
 # create a queue class
 class Queue:
@@ -57,9 +45,8 @@ class Queue:
 #---------------------------------------------------------------------------#
 # read origin-destination node list
 OD = pd.read_csv('OD.csv',low_memory=False)
-
+#---------------------------------------------------------------------------#
 rr = random.random()
-
 #---------------------------------------------------------------------------#
 
 
