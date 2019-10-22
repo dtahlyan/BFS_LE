@@ -1,7 +1,7 @@
 # BFS_LE
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-**References:** 
+## REFERENCES 
 
 1. Tahlyan, D., 2018. Performance Evaluation of Choice Set Generation Algorithms for Modeling Truck Route Choice: Insights from Large Streams of Truck-GPS Data. [Link](https://scholarcommons.usf.edu/etd/7649/)
 
