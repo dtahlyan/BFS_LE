@@ -10,10 +10,10 @@ import math
 import random
 #---------------------------------------------------------------------------#
 #read list of LINK_IDs and corresponding lengths (meters)
-Link_Length = pd.read_csv('Link_Length_new.csv',low_memory=False, dtype={'LINK_ID':int, 'Shape_Length':float})
+Link_Length = pd.read_csv('data/Link_Length_new.csv',low_memory=False, dtype={'LINK_ID':int, 'Shape_Length':float})
 #---------------------------------------------------------------------------#
 # read graph from txt
-G = nx.read_edgelist('network_graph_mehek.txt',create_using = nx.DiGraph(),delimiter = "," ,nodetype=int, data=(('LINK_ID',float),('TT',float),('Length',float)))
+G = nx.read_edgelist('data/network_graph_mehek.txt',create_using = nx.DiGraph(),delimiter = "," ,nodetype=int, data=(('LINK_ID',float),('TT',float),('Length',float)))
 #---------------------------------------------------------------------------#
 # used for writing line variable names
 namespace = globals()
@@ -44,7 +44,7 @@ class Queue:
 
 #---------------------------------------------------------------------------#
 # read origin-destination node list
-OD = pd.read_csv('OD.csv',low_memory=False)
+OD = pd.read_csv('data/OD.csv',low_memory=False)
 #---------------------------------------------------------------------------#
 rr = random.random()
 #---------------------------------------------------------------------------#
@@ -69,7 +69,7 @@ for xx in range (1):
     while (stop - start < Max_time) and p < Max_unique and exhaust == 0:
         start = timeit.default_timer()
         # ---------------------------------------------------------------------------#
-        common = open('common'+ '_'+str(xx) +'.csv' , 'a')
+        common = open('generated_file/common'+ '_'+str(xx) +'.csv' , 'a')
         cr = csv.writer(common, delimiter=',', quotechar=',', quoting=csv.QUOTE_MINIMAL, lineterminator='\n')
         # ---------------------------------------------------------------------------#
         #shortest path
@@ -112,8 +112,8 @@ for xx in range (1):
 
         # ---------------------------------------------------------------------------#
         # write the shortest path in routes csv
-        routes = open('routes'+ '_'+str(xx) +'.csv', 'a') # open route link list file
-        unique = open('unique'+ '_'+str(xx) +'.csv', 'a') # open unique link list file
+        routes = open('generated_file/routes'+ '_'+str(xx) +'.csv', 'a') # open route link list file
+        unique = open('generated_file/unique'+ '_'+str(xx) +'.csv', 'a') # open unique link list file
         wr = csv.writer(routes, delimiter=',', quotechar=',', quoting=csv.QUOTE_MINIMAL, lineterminator='\n') # preparing for writing shortest route links in csv
         for q in range(1, len(route_0)): # loop over number of links in shortest route
             u = route_0[q - 1]
@@ -233,7 +233,7 @@ for xx in range (1):
             G.add_edge(aa, nn, TT=namespace['x_%d' % bb], LINK_ID=namespace['z_%d' % bb], Length=namespace['c_%d' % bb])
         exhaust = 1
 
-time = open('time.csv', 'a') # open route link list file
+time = open('generated_file/time.csv', 'a') 
 gr = csv.writer(time, delimiter=',', quotechar=',', quoting=csv.QUOTE_MINIMAL, lineterminator='\n')
 gr.writerow([xx,klm])
 time.close()
