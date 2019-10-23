@@ -1,5 +1,9 @@
 # BFS_LE
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
+###Note###
+I am still updating this repo with the necessary content. This note will disappear when the repo is ready. While the example data to demostrate the code is not in the data folder yet, the code.py is ready and works perfectly. Feel free to clone this repo to start playing around. If you have any questions, please write to me at dtahlyan [AT] u [DOT] northwestern [DOT] EDU. 
+
 ## REFERENCES 
 
 If you find BFS_LE useful, please cite my [thesis](https://scholarcommons.usf.edu/etd/7649/). Thank you!
