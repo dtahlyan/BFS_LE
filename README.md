@@ -1,4 +1,11 @@
-# BFS_LE
+# Breadth-First-Search Link Elimination (BFS-LE)
+This repository contains python 3 implementation of the modified breadth first search link elimination algorithm using for generating route choice sets in a network. The algorithm was originally proposed by Rieser-Sch{\"u}ssler et al. (2013)
+
+
+
+
+
+
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 ### NOTE
