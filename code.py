@@ -10,10 +10,10 @@ import math
 import random
 #---------------------------------------------------------------------------#
 #read list of LINK_IDs and corresponding lengths (meters)
-Link_Length = pd.read_csv('data/Length1.csv',low_memory=False, dtype={'LINK_ID':int, 'Shape_Length':float})
+Link_Length = pd.read_csv('data/Length.csv',low_memory=False, dtype={'LINK_ID':int, 'Shape_Length':float})
 #---------------------------------------------------------------------------#
 # read graph from txt
-G = nx.read_edgelist('data/network1.txt',create_using = nx.DiGraph(),delimiter = "," ,nodetype=int, data=(('LINK_ID',float),('TT',float),('Length',float)))
+G = nx.read_edgelist('data/network.txt',create_using = nx.DiGraph(),delimiter = "," ,nodetype=int, data=(('LINK_ID',float),('TT',float),('Length',float)))
 #---------------------------------------------------------------------------#
 # used for writing line variable names
 namespace = globals()
