@@ -220,7 +220,7 @@ for xx in range (1):
                                 namespace['ull_%d' % p].append(k)
                                 qr.writerow([xx,p, k])
                         stop = timeit.default_timer()
-                        #klm = stop - start
+                        klm = stop - start
                         #print(stop - start)
 
                     except (nx.NetworkXNoPath, nx.exception.NetworkXError) as e:
@@ -233,10 +233,10 @@ for xx in range (1):
             G.add_edge(aa, nn, TT=namespace['x_%d' % bb], LINK_ID=namespace['z_%d' % bb], Length=namespace['c_%d' % bb])
         exhaust = 1
 
-#time = open('generated_files/time.csv', 'a') 
-#gr = csv.writer(time, delimiter=',', quotechar=',', quoting=csv.QUOTE_MINIMAL, lineterminator='\n')
-#gr.writerow([xx,klm])
-#time.close()
+time = open('generated_files/time.csv', 'a') 
+gr = csv.writer(time, delimiter=',', quotechar=',', quoting=csv.QUOTE_MINIMAL, lineterminator='\n')
+gr.writerow([xx,klm])
+time.close()
 unique.close()
 common.close()
 routes.close()
