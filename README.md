@@ -16,6 +16,8 @@ This repository contains python 3 implementation of the modified breadth first s
 
 ## EXAMPLE DATASET
 
+The example network contains 500 nodes and 12,385 links and has been visualized below. This network was randomly generated using a link occurance probability of 0.05. 
+
 ![Alt text](images/sample_graph.png?raw=true "Visualization showing the example network")
 
 
