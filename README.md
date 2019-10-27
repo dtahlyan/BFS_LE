@@ -14,6 +14,11 @@ This repository contains python 3 implementation of the modified breadth first s
 
 
 
+## EXAMPLE DATASET
+
+![Alt text](images/sample_graph.png?raw=true "Visualization showing the example network")
+
+
 
 ## REFERENCES 
 
