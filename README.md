@@ -20,6 +20,7 @@ The example network contains 500 nodes and 12,385 links and has been visualized 
 
 ![Alt text](images/sample_graph.png?raw=true "Visualization showing the example network")
 
+Add content here
 
 
 ## REFERENCES 
