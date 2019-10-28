@@ -53,6 +53,7 @@ rr = random.random()
 #--------------------------Define stopping conditions------------------------#
 Max_time = 3600 #Maximum time for route generation in seconds. 3600 seconds = 1 hour
 Max_unique = 10 #Maximum number of unique routes to generate
+Threshold = 0.95 #Commonality factor used to find unique routes
 #---------------------------------------------------------------------------#
 
 # loop over origin destination pairs
@@ -193,7 +194,7 @@ for xx in range (1):
                         CF_List = []
                         w = 0
                         CF = 0
-                        while w < p+1 and CF < 0.95:
+                        while w < p+1 and CF < Threshold:
                             dk = set(namespace['rl_%d' % j]) & set(namespace['ull_%d' % w])
                             dk = list(dk)
                             if dk == []:
@@ -208,7 +209,7 @@ for xx in range (1):
                             cr.writerow([xx,j,w,CF])
                             #print(str(CF))
                             w = w + 1
-                        if w == p + 1 and CF < 0.95:
+                        if w == p + 1 and CF < Threshold:
                             p = p + 1
                             print(str("unique route found--") + str(p))
                             namespace['ull_%d' % p] = []
