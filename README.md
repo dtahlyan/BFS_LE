@@ -32,7 +32,7 @@ The main code for used for the choice set generation can be found in ```code.py`
 2. ```Max_unique```:
 3. ```Threshold```:
 
-## EXAMPLE DATASET
+### EXAMPLE DATASET
 
 The example network contains 500 nodes and 12,385 links and has been visualized below. This network was randomly generated using a link occurance probability of 0.05. 
 
@@ -41,7 +41,7 @@ The example network contains 500 nodes and 12,385 links and has been visualized 
 Add content here
 
 
-## REFERENCES 
+### REFERENCES 
 
 If you find BFS_LE useful, please cite my [thesis](https://scholarcommons.usf.edu/etd/7649/). Thank you!
 ```
