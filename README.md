@@ -24,6 +24,9 @@ The main code for used for the choice set generation can be found in ```code.py`
 |78|1|2|19.0342804637345|0.264365217932762|
 |82|1|3|16.4345412753542|0.319560780446973|
 
+The first entry in this table should be interpreted in this way: Link 1 goes from node 76 to node 1 and has a travel time/cost of ~26.45 units and a length of ~ 0.3673 units. It must be noted here that since we are dealing with directed network, if a link also exists in the network from node 1 to node 76, another row entry should exist in the ```network.txt``` file corresponding to it. 
+
+
 2. ```Length.csv```:
 3. ```OD.csv```:
 
