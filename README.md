@@ -19,7 +19,7 @@ The main code for used for the choice set generation can be found in ```code.py`
 1. ```network.txt```: This file information regarding the network (a directed graph) for which the choice set generation needs to be done. Below are first three rows of the ```network.txt``` file. 
 
 | Start Node  | End Node | Link ID | Travel Time / Cost | Length|
-| ------------- | ------------- |
+| ------------- | ------------- |------------- |------------- |------------- |
 |76|1|1|26.4509905802917|0.367375163070614|
 |78|1|2|19.0342804637345|0.264365217932762|
 |82|1|3|16.4345412753542|0.319560780446973|
