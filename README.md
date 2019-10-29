@@ -16,7 +16,7 @@ The main code for used for the choice set generation can be found in ```code.py`
 
 ### INPUT FILES
 
-1. ```network.txt```: This file information regarding the network (a directed graph) for which the choice set generation needs to be done. Below are first three rows of the ```network.txt``` file. 
+1. ```network.txt```: This file contains information regarding the network (a directed graph) for which the choice set generation needs to be done. Below are first three rows of the ```network.txt``` file. Note here the actual file does not have a header column. 
 
 | Start Node  | End Node | Link ID | Travel Time / Cost | Length|
 | ------------- | ------------- |------------- |------------- |------------- |
@@ -27,7 +27,14 @@ The main code for used for the choice set generation can be found in ```code.py`
 The first entry in this table should be interpreted in this way: Link 1 goes from node 76 to node 1 and has a travel time/cost of ~26.45 units and a length of ~ 0.3673 units. It must be noted here that since we are dealing with directed network, if a link also exists in the network from node 1 to node 76, another row entry should exist in the ```network.txt``` file corresponding to it. 
 
 
-2. ```Length.csv```:
+2. ```Length.csv```: This file contains information regarding the of the each link. While this information is present in the previous file, the code used informaiton from this file instead of the previous one. Below are first three rowns of the ```Length.csv``` file. Note here that the actual file contains the header column and are used by the code for processing. 
+
+|LINK_ID|Shape_Length|
+|-------|----------|
+|1|	0.367375163070614|
+|2|	0.264365217932762|
+|3|	0.319560780446973|
+
 3. ```OD.csv```:
 
 ### OUTPUT FILEs
