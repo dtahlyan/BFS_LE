@@ -37,7 +37,7 @@ The first entry in this table should be interpreted in this way: Link 1 goes fro
 
 3. ```OD.csv```:
 
-### OUTPUT FILEs
+### OUTPUT FILES
 
 1. ```routes_0.csv```:
 2. ```unique_0.csv```:
