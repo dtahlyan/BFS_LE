@@ -55,7 +55,7 @@ rr = random.random()
 Max_time = 3600 #Maximum time for route generation in seconds. 3600 seconds = 1 hour
 Max_unique = 10 #Maximum number of unique routes to generate (This number excludes 
                 #the shortest route, so upto 6 unique routes will be generated)
-                #Set this to a large number if you only care about routes and not unique routes. 
+                #Set this to a large number if you only care about routes and not unique routes
 #---------------------Other hyper parameters--------------------------------#
 Threshold = 0.95 #Commonality factor used to find unique routes
 #---------------------------------------------------------------------------#
