@@ -45,6 +45,7 @@ class Queue:
 #---------------------------------------------------------------------------#
 # read origin-destination node list
 OD = pd.read_csv('data/OD.csv',low_memory=False)
+r,c = OD.shape #Get number of rows and columns in OD dataset
 #---------------------------------------------------------------------------#
 rr = random.random()
 #---------------------------------------------------------------------------#
@@ -57,7 +58,7 @@ Threshold = 0.95 #Commonality factor used to find unique routes
 #---------------------------------------------------------------------------#
 
 # loop over origin destination pairs
-for xx in range (1):
+for xx in range (r):
     print(str ('OD pair number is____') + str(xx))
     # ---------------------------------------------------------------------------#
     exhaust = 0
