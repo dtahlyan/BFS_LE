@@ -2,61 +2,10 @@
 [![Python 3.6](https://img.shields.io/badge/python-3.7-blue.svg)](https://www.python.org/downloads/release/python-370/)
 
 
-### NOTE
-I am still updating this repo with the necessary content. This note will disappear when the repo is ready. The repo now has all the necessary example dataset to run the ```code.py``` but I am still in the process of updating the documentation to understand this repo. Feel free to clone this repo to start playing around. If you have any questions, please write to me at dtahlyan [AT] u [DOT] northwestern [DOT] edu. 
-
 # Breadth-First-Search Link Elimination (BFS-LE)
 This repository contains python implementation of the modified breadth first search link elimination algorithm used for generating route choice sets in a network. The algorithm was originally proposed by [Rieser-Schussler et al. (2013)](https://www.tandfonline.com/doi/full/10.1080/18128602.2012.671383). The modified version, which generates *unique* routes instead of just routes, was proposed in my thesis and can be accessed [here](https://scholarcommons.usf.edu/etd/7649/). An augmented version of my thesis is expected to be out as a paper soon and is co-authored with [Prof. Abdul Pinjari](https://abdulpinjari.weebly.com/). The pre-print of the paper can be accessed [here](https://abdulpinjari.weebly.com/uploads/9/6/7/8/9678119/tahlyan_pinjari_route_choicesets_march_2018.pdf). 
 
-The main code for used for the choice set generation can be found in ```code.py``` file. An example network, and the output from the code are presented in the ```data``` and ```generated_files``` folders, respectively. The input files, out files, and hyper parameters that can be set in the code, and the example dataset are discussed in the following sections. 
-
-
-
-
-
-### INPUT FILES
-
-1. ```network.txt```: This file contains information regarding the network (a directed graph) for which the choice set generation needs to be done. Below are first three rows of the ```network.txt``` file. Note here the actual file does not have a header column. 
-
-| Start Node  | End Node | Link ID | Travel Time / Cost | Length|
-| ------------- | ------------- |------------- |------------- |------------- |
-|76|1|1|26.4509905802917|0.367375163070614|
-|78|1|2|19.0342804637345|0.264365217932762|
-|82|1|3|16.4345412753542|0.319560780446973|
-
-The first entry in this table should be interpreted in this way: Link 1 goes from node 76 to node 1 and has a travel time/cost of ~26.45 units and a length of ~ 0.3673 units. It must be noted here that since we are dealing with directed network, if a link also exists in the network from node 1 to node 76, another row entry should exist in the ```network.txt``` file corresponding to it. 
-
-
-2. ```Length.csv```: This file contains information regarding the of the each link. While this information is present in the previous file, the code used informaiton from this file instead of the previous one. Below are first three rowns of the ```Length.csv``` file. Note here that the actual file contains the header column and are used by the code for processing. 
-
-|LINK_ID|Shape_Length|
-|-------|----------|
-|1|	0.367375163070614|
-|2|	0.264365217932762|
-|3|	0.319560780446973|
-
-3. ```OD.csv```:
-
-### OUTPUT FILES
-
-1. ```routes_0.csv```:
-2. ```unique_0.csv```:
-3. ```common_0.csv```:
-4. ```time.csv```:
-
-### HYPER PARAMETERS
-1. ```Max_time```:
-2. ```Max_unique```:
-3. ```Threshold```:
-
-### EXAMPLE DATASET
-
-The example network contains 500 nodes and 12,385 links and has been visualized below. This network was randomly generated using a link occurance probability of 0.05. 
-
-![Alt text](images/sample_graph.png?raw=true "Visualization showing the example network")
-
-Add content here
-
+The main code for used for the choice set generation can be found in ```code.py``` file. An example network, and the output from the code are presented in the ```data``` and ```generated_files``` folders, respectively. 
 
 ### REFERENCES 
 
