@@ -9,7 +9,7 @@ The main code for used for the choice set generation can be found in ```code.py`
 
 ### REFERENCES 
 
-If you find BFS_LE useful, please cite my the paper and my thesis. Thank you!
+If you find BFS_LE useful, please cite the paper and/or thesis. Thank you!
 
 ```
 @article{tahlyanperformance,
