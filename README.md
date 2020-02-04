@@ -18,7 +18,6 @@ If you find BFS_LE useful, please cite my the paper and my thesis. Thank you!
   year={2020},
   journal={Transportmetrica A: Transport Science},
   publisher={Taylor \& Francis}
-  url = {https://doi.org/10.1080/23249935.2020.1725790}
 }
 ```
 
