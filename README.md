@@ -5,7 +5,7 @@
 # Breadth-First-Search Link Elimination (BFS-LE)
 This repository contains python implementation of the modified breadth first search link elimination algorithm used for generating route choice sets in a network. The algorithm was originally proposed by [Rieser-Schussler et al. (2013)](https://www.tandfonline.com/doi/full/10.1080/18128602.2012.671383). The modified version, which generates *unique* routes instead of just routes, was used in my master's thesis and can be accessed [here](https://scholarcommons.usf.edu/etd/7649/). An augmented version of my thesis is now out as a paper and can be accessed [here](https://www.tandfonline.com/doi/full/10.1080/23249935.2020.1725790). 
 
-The main code for used for the choice set generation can be found in ```code.py``` file. An example network (created using a random graph generation algorithm), and the output from the code for this network are presented in the ```data``` and ```generated_files``` folders, respectively. 
+The main code used for the choice set generation can be found in ```code.py``` file. An example network (created using a random graph generation algorithm), and the output from the code for this network are presented in the ```data``` and ```generated_files``` folders, respectively. 
 
 If you find and error in the code, feel free to open an issue here on github and I will try to resolve it at the earliest. Alternatively, feel free to write to me at  dtahlyan [@] u [.] northwestern [.] edu
 
