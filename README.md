@@ -7,7 +7,7 @@ This repository contains python implementation of the modified breadth first sea
 
 The main code used for the choice set generation can be found in ```code.py``` file. An example network (created using a random graph generation algorithm), and the output from the code for this network are presented in the ```data``` and ```generated_files``` folders, respectively. 
 
-If you find and error in the code, feel free to open an issue here on github and I will try to resolve it at the earliest. Alternatively, feel free to write to me at  dtahlyan [@] u [.] northwestern [.] edu
+If you find an error in the code, feel free to open an issue here on github and I will try to resolve it at the earliest. Alternatively, feel free to write to me at  dtahlyan [@] u [.] northwestern [.] edu
 
 
 If you find BFS_LE useful, please cite the paper and/or thesis. Thank you!
