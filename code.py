@@ -54,11 +54,15 @@ rr = random.random()
 #--------------------------Define stopping conditions------------------------#
 Max_time = 3600 #Maximum time for route generation in seconds. 3600 seconds = 1 hour
 Max_unique = 10 #Maximum number of unique routes to generate (This number excludes 
-                #the shortest route, so upto 6 unique routes will be generated)
+                #the shortest route, so upto 11 unique routes will be generated)
                 #Set this to a large number if you only care about routes and not unique routes
 #---------------------Other hyper parameters--------------------------------#
 Threshold = 0.95 #Commonality factor used to find unique routes
 #---------------------------------------------------------------------------#
+
+#--------Note----------------
+#---I used a HPC for my thesis since I was dealing with too many OD pairs. I suggest doing the same since generating routes sequencially -------
+#--- will take forever if there are to many OD pairs and if takes upto 1 hour for each OD pair-----------
 
 # loop over origin destination pairs
 for xx in range (r):
